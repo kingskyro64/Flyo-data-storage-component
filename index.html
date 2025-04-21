@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo data storage component</title>
@@ -16,12 +16,38 @@
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+  <main class="container">
+    <div class="one">
+      <img src="./images/logo.svg" alt="Fylo logo" class="logo">
+      <div class="icons">
+        <div class="file-div"> <img src="./images/icon-document.svg" alt="File icon" class="file"></div>
+        <div class="folder-div"> <img src="./images/icon-folder.svg" alt="Folder-icon" class="folder"></div>
+        <div class="upload-div"> <img src="./images/icon-upload.svg" alt="Upload icon" class="uplaod-icon"></div>
+      </div>
+    </div>
+    <div class="two">
+      <div class="status-bubble">185 <span>GB LEFT</span></div>
+    
+      <p class="text">You’ve used <b>815 GB</b> of your storage</p>
+    
+      <div class="progress-bar">
+        <div class="progress-fill">
+          <div class="circle"></div>
+        </div>
+      </div>
+    
+      <div class="storage-length">
+        <b class="storage-start">0 GB</b>
+        <b class="storage-end">1000 GB</b>
+      </div>
+    </div>
+    
+     
+    </div>
+     
+  </main>
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

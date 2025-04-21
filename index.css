@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: hsl(229, 57%, 11%);
+    color: hsl(243, 100%, 93%);
+    font-family: 'Raleway';
+    background-image: url('./images/bg-desktop.png');
+    background-position-y: 20rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2rem;
+    color: hsl(0, 0%, 80%);
+}
+  
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: white;
+}
+  
+
+.logo{
+    width: 100%;
+    max-width: 50%;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons div {
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px;
+    border-radius: 10px;
+} 
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem; /* spacing between the boxes */
+    flex-wrap: wrap; /* allows stacking on small screens */
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 2rem;
+  }
+  
+  .one {
+    flex: 1;
+    min-width: 280px;
+    background-color: hsl(228, 56%, 26%);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    border-top-right-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+  }
+
+  
+  .icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .icons div {
+    background-color: hsl(229, 57%, 11%);
+    padding: 0.7rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .icons div:hover{
+    background: hsl(229, 7%, 55%);
+ }
+  
+  .two {
+    flex: 2;
+    min-width: 500px;
+    background-color: hsl(228, 56%, 26%);
+    padding: 3rem;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* The white "185 GB Left" bubble */
+  .status-bubble {
+    position: absolute;
+    top: -2.5rem;
+    right: 2rem;
+    background-color: white;
+    color: hsl(229, 57%, 11%);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-transform: uppercase;
+  }
+  
+  .status-bubble span {
+    font-size: 0.7rem;
+    color: hsl(229, 7%, 55%);
+    font-weight: 400;
+  }
+  
+  /* Tail on the speech bubble */
+  .status-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    border-width: 10px 10px 0 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  
+  /* Progress bar container */
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Fill of the progress bar */
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 81.5%; /* 815 out of 1000 GB */
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  /* The white circle at the end */
+  .circle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  /* Storage labels */
+  .storage-length {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  
